@@ -91,29 +91,162 @@ ul li {
     width: 52px;
     height: 50px;
 }
-.box0{
-    border-bottom:1px solid #ccc;
+
+.box0 {
+    border-bottom: 1px solid #ccc;
 }
-.box3{
+
+.box3 {
     width: 100%;
     position: relative;
     float: left;
     height: 60px;
-    border-bottom:0.5px  #ccc;
+    border-bottom: 0.5px #ccc;
     box-shadow: #ccc 1px 2px 1px 1px;
 }
-.box3-1{
+
+.box3-1 {
     height: 60px;
     float: left;
     line-height: 60px;
     margin-left: 20px;
 }
-.box3 .list3{
+
+.box3 .list3 {
     margin-right: 20px;
     height: 60px;
     float: right;
 }
-.box3 .list3 li{
+
+.box3 .list3 li {
     float: left;
     line-height: 60px;
+}
+.box4{
+    position: relative;
+    float: left;
+    width: 640px;
+    height: 489px;
+}
+#box {
+    margin-left: 97px;
+    margin-top: 40px;
+    width: 350px;
+    height: 350px;
+    border: 1px solid #000;
+    position: relative;
+}
+#box6{
+    margin-left: 97px;
+}
+#big {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #000;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 360px;
+    display: none;
+    z-index: 999;
+}
+
+#mask {
+    width: 175px;
+    height: 175px;
+    background: paleturquoise;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+    display: none;
+    cursor: move;
+}
+
+#small {
+    position: relative;
+}
+
+#bigImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5 {
+    position: relative;
+    float: left;
+    cursor: pointer;
+    margin-left: 11px;
+}
+.box5{
+    margin-top: 30px;
+    width: 623px;
+    position: relative;
+    float: left;
+}
+.box5 .list4 li{
+margin: 10px;
+}
+.box5-1 .list4 .list5 li{
+    float: left;
+}
+.box5-1 .list4 .list5 li:first-child{
+width: 80px;
+height: 24px;
+background: #ff6700;
+color: white;
+text-align: center;
+}
+
+.box5-1 .list4 .list5 div{
+    height: 45px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.box7 .list6 li{
+    border: 0.5px solid #ccc;
+    width: 278px;
+    height: 42px;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    line-height: 42px;
+}
+.box7-1,.box7-2,.box7-3{
+    position: relative;
+    float: left;
+}
+.box8{
+    position: relative;
+    float: left;
+    width: 606px;
+    height: 120px;
+    background: #f9f9fa;
+}
+.box8 .box8-2{
+    position: relative;
+    float: left;
+    color: #ff6700;
+    font-size: 24px;
+    margin-top: 20px;
+}
+.box8 .box8-1{
+    height: 20px;
+    margin: 10px;
+}
+.box9{
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 54px;
+    background: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+    text-align: center;
+    line-height:54px; 
 }

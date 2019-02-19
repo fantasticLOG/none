@@ -10,7 +10,7 @@
 </head>
 
 <body>
-        <div class="box0">
+    <div class="box0">
         <div class="box1">
             <div class="box1 box-1">
                 <ul class="list1">
@@ -61,10 +61,10 @@
                     <input type="text" class="box2 box2-3 inp2">
                 </form>
             </div>
-            </div>
+        </div>
         <div class="box3">
             <div class="box3-1">
-                <h2>小米6X</h2>
+                <h3>小米6X</h3>
             </div>
             <ul class="list3">
                 <li>概述</li>
@@ -78,6 +78,155 @@
                 <li>用户评价</li>
             </ul>
         </div>
+        <div class="box4">
+            <div id="box">
+                <div id="small">
+                    <!--小图区-->
+                    <img src="image/home/pms1.jpg" alt="" />
+                    <div id="mask"></div>
+                    <!--遮罩层-->
+                </div>
+                <div id="big">
+                    <!--大图区-->
+                    <img src="image/home/pms.jpg" alt="" id="bigImg" />
+                </div>
+            </div>
+            <div id="box6">
+                <div id="box1"><img src="image/home/pms2.jpg" alt=""></div>
+                <div id="box2"><img src="image/home/yhf1.jpg" alt=""></div>
+                <div id="box3"><img src="image/home/yhf2.jpg" alt=""></div>
+                <div id="box4"><img src="image/home/yhf3.jpg" alt=""></div>
+                <div id="box5"><img src="image/home/yhf4.jpg" alt=""></div>
+                <div class="box4-2"></div>
+            </div>
+        </div>
+        <div class="box5">
+            <div class="box5-1">
+                <ul class="list4">
+                    <li>
+                        <h2>小米6X</h2>
+                    </li>
+                    <li>
+                        <p>
+                            <font color="#ff4a00">「6GB+64GB，赤焰红、樱花粉限时1299元」「6GB+128GB，1499元」</font>轻薄美观的拍照手机 /
+                            前置2000万“治愈系”自拍 / 后置2000万 AI双摄 / 标配骁龙660 AIE处理器
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <font color="#ff4a00">小米自营</font>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <font color="#ff4a00">1299元 </font>
+                            <font style="text-decoration: line-through;
+                            text-decoration-color: #ccc;
+                            color: #ccc;">1799元</font>
+                        </p>
+                    </li>
+                    <li class="list5">
+                        <div>
+                            <ul>
+                                <li>赠品</li>
+                                <li>赠米粉卡，最高含100元话费</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box7">
+                <div class="box7-1">
+                    <h3>选择版本</h3>
+                    <ul class="list6">
+                        <li>
+                            6GB+64GB
+                        </li>
+                        <li>
+                            <p>6GB+128GB
+                                <font color="#ccc">1499元</font>
+                            </p>
+                        </li>
+                        <li>
+                            <p>6GB+64GB 移动4G+
+                                <font color="#ccc">1249元</font>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box7-2">
+                    <h3>选择颜色</h3>
+                    <ul class="list6">
+                        <li>
+                            樱花粉
+                        </li>
+                        <li>
+                            曜石黑
+                        </li>
+                        <li>
+                            赤焰红
+                        </li>
+                        <li>
+                            冰川蓝
+                        </li>
+                    </ul>
+                </div>
+                <div class="box7-3">
+                    <h3>选择套餐</h3>
+                    <ul class="list6">
+                        <li>
+                            标配
+                        </li>
+                        <li>
+                            耳机套餐
+                        </li>
+                    </ul>
+                </div>
+                <div class="box8">
+                    <div class="box8-1">
+                        <p style="float: left">小米6X 6GB+64GB 樱花粉</p>
+                        <p style="float: right">1299元<font>1799元</font>
+                        </p>
+                    </div>
+                    <div class="box8-2">总计：1299元</div>
+                </div>
+                <div class="box9">加入购物车</div>
+            </div>
+        </div>
+        <script src="public.js"></script>
+        <script>
+            $id("box").onmouseenter = function () {
+                $id("mask").style.display = "block";
+                $id("big").style.display = "block";
+            }
+            $id("box").onmouseleave = function () {
+                $id("mask").style.display = "none";
+                $id("big").style.display = "none";
+            }
+            $id("box").onmousemove = function (e) {
+                var e = e || event;
+                var sTop = document.documentElement.scrollTop;
+                var l = e.clientX - $id("box").offsetLeft - $id("mask").offsetWidth / 2;
+                var t = e.clientY - $id("box").offsetTop - $id("mask").offsetHeight - 110;
+                //console.log(t)
+                var maxL = $id("box").clientWidth - $id("mask").offsetWidth;
+                var maxT = $id("box").clientHeight - $id("mask").offsetHeight;
+                l = l < 0 ? 0 : (l > maxL ? maxL : l);
+                t = t < 0 ? 0 : (t > maxT ? maxT : t);
+
+                //console.log(t)
+
+                $id("mask").style.left = l + "px";
+                $id("mask").style.top = t + "px";
+
+                //大图显示：
+                // bigImgLeft / l = (大图的宽度-大图可视区宽度)/(小图宽度-mask的宽度) = 大图宽度/小图宽度 = 大图可视区宽度 / 小图可视区（mask）宽度
+
+
+                $id("bigImg").style.left = -l * ($id("bigImg").offsetWidth / $id("small").offsetWidth) + "px";
+                $id("bigImg").style.top = -t * ($id("bigImg").offsetHeight / $id("small").offsetHeight) + "px";
+            }
+        </script>
 </body>
 
 </html>
