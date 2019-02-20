@@ -1,99 +1,157 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-ul li{
+
+ul li {
     list-style: none;
 }
-.box1{
+
+.box1 {
     width: 1280px;
     height: 102px;
     background: #fff;
     color: #b0b0b0;
-    border-bottom:2px solid #ff6700;
+    border-bottom: 2px solid #ff6700;
 }
-.box1 .list1{
+
+.box1 .list1 {
     float: left;
     margin-left: 5px;
 }
-.box1 .list1 li{
+
+.box1 .list1 li {
     float: left;
-    line-height:102px; 
+    line-height: 102px;
     margin-left: 15px;
 }
-.box1 .list1 li:last-child{
+
+.box1 .list1 li:last-child {
     font-size: 12px;
     line-height: 124px;
 }
-.box1 .list2{
+
+.box1 .list2 {
     float: right;
     margin-right: 20px;
 }
-.box1 .list2 li{
+
+.box1 .list2 li {
     float: left;
     font-size: 12px;
-    line-height:102px; 
+    line-height: 102px;
 }
-.box2{
+
+.box2 {
     width: 1226px;
     position: relative;
     float: left;
 }
-.box2-1{
+
+.box2-1 {
     height: 70px;
     background: #fff;
     position: relative;
-    border-bottom:1px solid #b0b0b0;
+    border-bottom: 1px solid #b0b0b0;
 }
-.box2-1 list3{
+
+.box2-1 list3 {
     float: left;
     position: relative;
 }
-.box2-1 .list3 li{
+
+.box2-1 .list3 li {
     float: left;
     line-height: 70px;
     margin-left: 40px;
 }
-.box2-1 .list3 li:last-child{
+
+.box2-1 .list3 li:last-child {
     margin-left: 150px;
 }
-.box2-1 .list4{
+
+.box2-1 .list4 {
     float: right;
     position: relative;
 }
-.box2-1 .list4 li{
+
+.box2-1 .list4 li {
     float: left;
     line-height: 70px;
-    margin-right: 70px;
+    margin-right: 77px;
 }
+
 .box2-2 {
     margin-top: 20px;
-    background:#fff; 
+    background: #fff;
     width: 1226px;
     position: relative;
 }
-.box2-2 .list5{
+
+.box2-2 .list5 {
     float: left;
     margin-left: 40px;
 }
-.box2-2 .list5 li{
+
+.box2-2 .list5 li {
     float: left;
     line-height: 50px;
 }
-.box2-2 .list6{
+
+.box2-2 .list6 {
     float: right;
 }
-.box2-2 .list6 li{
+
+.box2-2 .list6 li {
     float: left;
     margin-right: 50px;
     line-height: 50px;
 }
-.box2-2 .list6 li:first-child{
+
+.box2-2 .list6 li:first-child {
     color: #ff6700;
 }
-.box2-2 .list6 li:last-child{
+
+.box2-2 .list6 li:last-child {
     background: #b0b0b0;
     width: 202px;
     height: 50px;
+    text-align: center;
+}
+
+.box3 {
+    position: relative;
+    float: left;
+    height: 80px;
+    width: 1200px;
+}
+.box3 .list7{
+    margin-left: 20px;
+}
+.box3 .list7 li {
+    margin-left: 20px;
+    position: relative;
+    float: left;
+}
+.box3 .list8{
+    margin-right: 20px;
+    position: relative;
+    float: right;
+}
+.box3 .list8 li{
+    position: relative;
+    float: left;
+    margin-right: 47px;
+}
+.box3 .list8 li div{
+    float: left;
+}
+.box3 .list8 li .d1,.d3{
+    width: 32px;
+    height: 32px;
+}
+.box3 .list8 li .d2{
+    width: 66px;
+    height: 38px;
     text-align: center;
 }

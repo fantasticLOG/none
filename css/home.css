@@ -58,11 +58,12 @@ ul li {
     font-size: 0;
 }
 
-.box2 .box2-1 {
+ .box2-1 {
     float: left;
     width: 57px;
     height: 56px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .box2 .box2-2 {
@@ -108,10 +109,31 @@ ul li {
     padding: 13px 13px 13px 30px;
     color: #fff;
     background: #333;
+    width: 191px;
+    height: 17px;
 }
-
+.box3-2{
+    width: 985px;
+    height: 469px;
+    border: 1px solid #ccc;
+    position: absolute;
+    margin-left: 233px;
+    z-index:10;
+    display: none;
+    background: white;
+}
+.box3-2 ul{
+    float: left;
+    position: relative;
+    width: 246px;
+}
+.box3-2 ul li{
+    height: 76px;
+    text-align: center;
+}
 .banner {
     position: relative;
+    float: left;
     width: 986px;
     height: 470px;
     background: gray;
@@ -332,6 +354,7 @@ ul li {
     background: #fff;
     margin-left: 10px;
     margin-bottom: 14px;
+    cursor: pointer;
 }
 
 .box7-4 .list2 li img {

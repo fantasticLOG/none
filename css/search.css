@@ -147,3 +147,15 @@ ul li {
     line-height: 100px;
     margin-right: 25px;
 }
+.box6{
+    position: relative;
+    width: 1280px;
+}
+.biao1 li{
+    position: relative;
+    width: 296px;
+    float: left;
+    text-align: center;
+    margin-right: 14px;
+    margin-top: 47px;
+}

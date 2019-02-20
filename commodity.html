@@ -33,13 +33,13 @@
                     <li>登录</li>
                     <li>注册</li>
                     <li>消息通知</li>
-                    <li>购物车(0)</li>
+                    <li id="cart">购物车<span id="cartGoodsNum">(0)</span></li>
                 </ul>
             </div>
         </div>
         <div class="box2">
-            <div class="box2 box2-1">
-                <img src="image/home/logo-footer.png" alt="">
+            <div class="box2-1" >
+                <a id="home"><img src="image/home/logo-footer.png" alt=""></a>
             </div>
             <div class="box2 box2-2">
                 <ul id="list1">
@@ -56,10 +56,8 @@
                 </ul>
             </div>
             <div class="box2 box2-3">
-                <form action="">
-                    <input type="text" class="box2 box2-3 inp1" autofocus="autofocus">
-                    <input type="text" class="box2 box2-3 inp2">
-                </form>
+                <input type="text">
+                <input type="text" value="搜索" style="text-align: center">
             </div>
         </div>
         <div class="box3">
@@ -81,13 +79,10 @@
         <div class="box4">
             <div id="box">
                 <div id="small">
-                    <!--小图区-->
                     <img src="image/home/pms1.jpg" alt="" />
                     <div id="mask"></div>
-                    <!--遮罩层-->
                 </div>
                 <div id="big">
-                    <!--大图区-->
                     <img src="image/home/pms.jpg" alt="" id="bigImg" />
                 </div>
             </div>
@@ -194,6 +189,7 @@
             </div>
         </div>
         <script src="public.js"></script>
+        <script src="js/jquery.min.js"></script>
         <script>
             $id("box").onmouseenter = function () {
                 $id("mask").style.display = "block";
@@ -208,24 +204,27 @@
                 var sTop = document.documentElement.scrollTop;
                 var l = e.clientX - $id("box").offsetLeft - $id("mask").offsetWidth / 2;
                 var t = e.clientY - $id("box").offsetTop - $id("mask").offsetHeight - 110;
-                //console.log(t)
                 var maxL = $id("box").clientWidth - $id("mask").offsetWidth;
                 var maxT = $id("box").clientHeight - $id("mask").offsetHeight;
                 l = l < 0 ? 0 : (l > maxL ? maxL : l);
                 t = t < 0 ? 0 : (t > maxT ? maxT : t);
 
-                //console.log(t)
 
                 $id("mask").style.left = l + "px";
                 $id("mask").style.top = t + "px";
 
-                //大图显示：
-                // bigImgLeft / l = (大图的宽度-大图可视区宽度)/(小图宽度-mask的宽度) = 大图宽度/小图宽度 = 大图可视区宽度 / 小图可视区（mask）宽度
 
 
                 $id("bigImg").style.left = -l * ($id("bigImg").offsetWidth / $id("small").offsetWidth) + "px";
                 $id("bigImg").style.top = -t * ($id("bigImg").offsetHeight / $id("small").offsetHeight) + "px";
             }
+            $("#cart").click(function () {
+                location.href = 'shopcar.html';
+            });
+            $("#home").click(function () {
+                location.href = 'home.html';
+            });
+            
         </script>
 </body>
 

@@ -56,26 +56,56 @@
                 </ul>
             </div>
             <div class="box2 box2-3">
-                    <input type="text">
-                    <input type="text" value="搜索" style="text-align: center">
+                <input type="text">
+                <input type="text" value="搜索" style="text-align: center">
             </div>
         </div>
         <div class="box3">
             <div class="box3 box3-1">
                 <ul class="list1">
-                    <li>手机 电话卡</li>
-                    <li>电视 盒子</li>
-                    <li>笔记本 平板</li>
-                    <li>家电 插线板</li>
-                    <li>出行 穿戴</li>
-                    <li>智能 路由器</li>
-                    <li>电源 配件</li>
-                    <li>健康 恶童</li>
-                    <li>耳机 音响</li>
-                    <li>生活 箱包</li>
+                    <li id="list1">手机 电话卡</li>
+                    <li id="list1">电视 盒子</li>
+                    <li id="list1">笔记本 平板</li>
+                    <li id="list1">家电 插线板</li>
+                    <li id="list1">出行 穿戴</li>
+                    <li id="list1">智能 路由器</li>
+                    <li id="list1">电源 配件</li>
+                    <li id="list1">健康 恶童</li>
+                    <li id="list1">耳机 音响</li>
+                    <li id="list1">生活 箱包</li>
                 </ul>
             </div>
-            <div></div>
+            <div class="box3-2">
+                <ul>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                </ul>
+                <ul>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                </ul>
+                <ul>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                </ul>
+                <ul>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                    <li>小米MIX3</li>
+                </ul>
+            </div>
             <div class="banner" id="banner">
 
                 <ul class="img-list" id="img-list">
@@ -182,7 +212,7 @@
                 </div>
                 <div class="box7-4">
                     <ul class="list2">
-                        <li>
+                        <li id="cargo">
                             <div>新品</div>
                             <div>
                                 <img src="image/home/pms_1537323963.1278763_220x220.jpg" alt="">
@@ -672,7 +702,6 @@
     <script src="js/animate10.0.js"></script>
     <script src="js/jquery.min.js"></script>
     <script>
-        
         var imgList = $id("img-list");
         var banner = $id("banner");
         var imgLi = imgList.children;
@@ -796,6 +825,14 @@
         $("#reg").click(function () {
             location.href = 'register.html';
         });
+        $("#cargo").click(function () {
+            location.href = 'commodity.html';
+        });
+        $("#list1").hover(function (){  
+            $(".box3-2").show();  
+        },function (){  
+            $(".box3-2").hide();  
+        }); 
     </script>
 </body>
 
